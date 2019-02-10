@@ -64,3 +64,6 @@ class Downloader_GUI():
     def fileerror(self):
         messagebox.showerror("Error", "File Error")
         self.finish()
+    def nodiskspace(self):
+        messagebox.showerror("Error", "File is too big")
+        self.finish()

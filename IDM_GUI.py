@@ -15,14 +15,7 @@ class Window():
         
     def create_widgets(self):
         
-        tabControl =ttk.Notebook(self.win)
-        tab1 = ttk.Frame(tabControl)
-        tabControl.add(tab1, text = 'main')
-        tab2 = ttk.Frame(tabControl)
-        tabControl.add(tab2, text = 'dowload list')
-        tabControl.pack(expand = '1', fill = 'both')
-
-        mighty = ttk.LabelFrame(tab1, text = 'Main')
+        mighty = ttk.LabelFrame(self.win, text = 'Main')
         mighty.grid(column = 0, row = 0, padx = 8, pady = 4)
 
         urlLabel = ttk.Label(mighty, text = 'URL : ')
